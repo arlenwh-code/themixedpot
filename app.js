@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const https = require("https");
 const path = require("path");
 require("dotenv").config();
-const port = 3000;
+let port = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
