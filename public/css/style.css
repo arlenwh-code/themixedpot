@@ -1366,6 +1366,9 @@ about css
 /* ===================
 menu css 
 ====================== */
+.cat1Item{
+  margin-top: 40px;
+}
 
 .menu-wrapper .menu-item {
   display: flex;
@@ -1467,6 +1470,9 @@ text-align: center;
     text-align: center;
     gap: 20px;
     padding: 30px;
+  }
+  .filter-controls ul li{
+    margin: 0 10px;
   }
 }
 
