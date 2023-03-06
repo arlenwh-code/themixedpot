@@ -1,0 +1,92 @@
+<%- include("header") -%>
+    <main class="main">
+
+        <!-- breadcrumb -->
+        <div class="site-breadcrumb" style="background: url(assets/img/breadcrumb/breadcrumb.jpg)">
+            <div class="container">
+                <h2 class="breadcrumb-title">Contact Us</h2>
+                <ul class="breadcrumb-menu">
+                </ul>
+            </div>
+        </div>
+        <!-- breadcrumb end -->
+
+
+
+        <!-- contact area -->
+        <div class="contact-area py-120">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="contact-content">
+                                <div class="contact-item">
+                                    <i class="far fa-clock"></i>
+                                    <h4>Open Hours:</h4>
+                                    <p>
+                                        Sunday-Friday:<br>
+                                        08:00 AM - 10.00 PM
+                                    </p>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="far fa-envelope"></i>
+                                    <h4>Email Us:</h4>
+                                    <a href="mailto: msp@mymixedpot.com"><p>msp@mymixedpot.com</p></a>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="far fa-phone"></i>
+                                    <h4>Phone:</h4>
+                                    <p><a href="tel:347-880-9223">(347)-880-9223</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 align-self-center">
+                            <div class="contact-form">
+                                <div class="contact-form-header">
+                                    <h2 class="site-title">Get In <span>Touch</span></h2>
+                                    <p>Send Us An Email And Let Us Know How We Can Help You</p>
+                                </div>
+                                <form method="post" action="/contact" id="contact-form">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="name"
+                                                    placeholder="Your Name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" name="email"
+                                                    placeholder="Your Email" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="subject"
+                                            placeholder="Your Subject" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="message" cols="30" rows="5" class="form-control"
+                                            placeholder="Write Your Message"></textarea>
+                                    </div>
+                                    <button type="submit" class="theme-btn"> <i class="far fa-paper-plane"></i> Send
+                                        Message</button>
+                                    <div class="col-md-12 mt-3">
+                                        <div class="form-messege text-success"></div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end contact area -->
+
+
+
+    </main>
+
+
+    <%- include("footer") -%>

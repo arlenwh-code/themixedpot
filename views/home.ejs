@@ -1,0 +1,275 @@
+<%- include("header") -%>
+
+    <main class="main">
+
+        <!-- hero area -->
+        <div class="hero-section">
+            <div class="hero-single" style="background-image: url(imgs/slider/img1.jpg)">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-8 col-lg-8 mx-auto text-center">
+                            <div class="hero-content">
+                                <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
+                                    data-wow-duration="1s" data-wow-delay=".25s"><img class="logo2" src="imgs/logo/logo_mixedPotTxt_vector.png"></h6>
+                                <h1 class="hero-title wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                    data-wow-delay=".50s">
+                                    <img class="logo3" src="imgs/logo/logo_mixedPotTxt2_vector.png">
+                                </h1>
+                                <!-- <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                    data-wow-delay=".75s">
+                                    There are many variations of passages available but the majority have suffered
+                                    alteration in some form by injected humour or randomised words which don't look even slightly believable.
+                                </p> -->
+                                <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                    data-wow-delay="1s">
+                                    <a href="/#menu" class="theme-btn">Check Menu<i
+                                            class="far fa-arrow-right"></i></a>
+                                    <a href="/contact" class="border-btn">Contact For Quote<i
+                                            class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hero area end -->      
+
+        <!-- about area -->
+        <div class="about-area py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-left">
+                            <div class="about-img">
+                                <img src="imgs/about/about1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-right">
+                            <div class="site-heading mb-3">
+                                <span class="site-title-tagline">Our History</span>
+                                <h2 class="site-title">The <span>Mixed</span> Pot</h2>
+                            </div>
+                            <p class="about-text"> In January of 2021 The idea for The Mixed Pot LLC was born in the rolling hills of Jamaica; Santa Cruz to be exact . 
+                                As I visited my home and reflected on the hard work the farmers do daily I felt a desire to share our stories through our food. 
+                            <div class="about-list-wrapper">
+                                <ul class="about-list list-unstyled">
+                                    <li>
+                                        <div class="icon"><span class="far fa-check-circle"></span></div>
+                                        <div class="text">
+                                            <p>Various Cuisines From Different Cultures </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><span class="far fa-check-circle"></span></div>
+                                        <div class="text">
+                                            <p>Appalachian Cooking Of West Virginia</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><span class="far fa-check-circle"></span></div>
+                                        <div class="text">
+                                            <p>Italian, Asian, and Spanish Cuisines</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="/about" class="theme-btn">Discover More <i class="far fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- about area end -->
+
+        <!-- menu area -->
+        <div id="menu" class="menu-area pb-120 pt-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Our Menu</span>
+                            <h2 class="site-title">Let's <span>Check</span> Our Menu</h2>
+                            <!-- <p>
+                                It is a long established fact that a reader will be distracted by the readable content
+                                of a page when looking at its layout.
+                            </p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrapper">
+
+                    <div class="filter-controls">
+                        <ul>
+                            <li class="h3 btn1 active" data-filter=".cat1">Daily</li>
+                            <li class="h3 btn2" >Catering</li>
+                        </ul>
+                        <div class="filter-box">
+                            <div class="menuItemNames">
+                                <ul class="filter-btns mainMenu">
+                                    <li class="menu1 initialMenuItem1" data-filter=".cat1">Platters</li>
+                                    <li class="menu1 initialMenuItem2" data-filter=".cat2">Entrees</li>
+                                    <li class="menu1 initialMenuItem3" data-filter=".cat5">Salads</li>
+                                    <li class="menu1 initialMenuItem4" data-filter=".cat6">Sides</li>
+                                    <li class="menu1 initialMenuItem5" data-filter=".cat7">Sandwiches</li>
+                                    <li class="menu1 initialMenuItem6" data-filter=".cat8">Drinks</li>
+                                    <li class="menu1 initialMenuItem7" data-filter=".cat9">Quick Bites</li>
+                                    <li class="menu1 initialMenuItem8" data-filter=".cat10">Desserts</li>
+                                    <li class="menu1 initialMenuItem9" data-filter=".cat11">Family Meals</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menuContainer">
+                        <%- include("platters") -%>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- menu area end -->
+
+        <!-- why choose -->
+        <div class="choose-area bg py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Why Choose Us</span>
+                            <h2 class="site-title text-white">Why <span>Choose</span> The Mixed Pot</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="choose-item">
+                            <div class="choose-icon">
+                                <i class="fal fa-utensils-alt"></i>
+                            </div>
+                            <div class="choose-content">
+                                <h4>Various Cuisines From Different Cultures</h4>
+                                <!-- <p>
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                                </p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="choose-item">
+                            <div class="choose-icon">
+                                <i class="fal fa-book-spells"></i>
+                            </div>
+                            <div class="choose-content">
+                                <h4>Appalachian Cooking Of West Virginia</h4>
+                                <!-- <p>
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                                </p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="choose-item">
+                            <div class="choose-icon">
+                                <i class="fal fa-hat-chef"></i>
+                            </div>
+                            <div id="gallery" class="choose-content">
+                                <h4>Italian, Asian, and Spanish Cuisines</h4>
+                                <!-- <p>
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                                </p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- why choose end -->
+
+        <%- include("cssImageGallery") -%>
+        
+        <!-- blog-area -->
+        <div class="blog-area my-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Our Blog</span>
+                            <h2 class="site-title">Latest <span>News</span> & Blog</h2>
+                            <div class="heading-divider"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-item-img">
+                                <a href="/cateringServices"><img src="imgs/blog/img4.png" alt="Thumb"></a>
+                            </div>
+                            <div class="blog-item-info">
+                                <div class="blog-item-meta">
+                                    <ul>
+                                        <li><a href="#"><i class="far fa-user-circle"></i> By Ms. P</a></li>
+                                        <li><a href="#"><i class="far fa-calendar-alt"></i> January 31, 2023</a></li>
+                                    </ul>
+                                </div>
+                                <h4 class="blog-title">
+                                    <a href="/cateringServices">Learn About Our Catering Services</a>
+                                </h4>
+                                <a class="theme-btn" href="/cateringServices">Read More <i class="far fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-item-img">
+                                <a href="/catFish"><img src="imgs/blog/img3.png" alt="Thumb"></a>
+                            </div>
+                            <div class="blog-item-info">
+                                <div class="blog-item-meta">
+                                    <ul>
+                                        <li><a href="#"><i class="far fa-user-circle"></i> By Ms. P</a></li>
+                                        <li><a href="#"><i class="far fa-calendar-alt"></i> January 31, 2023</a></li>
+                                    </ul>
+                                </div>
+                                <h4 class="blog-title">
+                                    <a href="/catFish">Our Traditional Style Catfish Is Second To None</a>
+                                </h4>
+                                <a class="theme-btn" href="/catFish">Read More <i class="far fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-item-img">
+                                <a href="/avocadoSalad"><img src="imgs/blog/img5.png" alt="Thumb"></a>
+                            </div>
+                            <div class="blog-item-info">
+                                <div class="blog-item-meta">
+                                    <ul>
+                                        <li><a href="#"><i class="far fa-user-circle"></i> By Ms. P</a></li>
+                                        <li><a href="#"><i class="far fa-calendar-alt"></i> January 31, 2023</a></li>
+                                    </ul>
+                                </div>
+                                <h4 class="blog-title">
+                                    <a href="/avocadoSalad">Try Our One And Only Ceaser Avocado Pasta Salad</a>
+                                </h4>
+                                <a class="theme-btn" href="/avocadoSalad">Read More <i class="far fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- blog-area end -->
+
+
+
+    </main>
+
+
+
+    <%- include("footer") -%>
+   
