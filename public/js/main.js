@@ -7,7 +7,6 @@ Version         : 1.1
 (function ($) {
     "use strict";
 
-
     // data-background    
     $(document).on('ready', function () {
         $("[data-background]").each(function () {
@@ -176,7 +175,6 @@ Version         : 1.1
         }
     });
 
-
     // countdown
     if ($('#countdown').length) {
         $('#countdown').countdown('2030/01/30', function (event) {
@@ -187,6 +185,7 @@ Version         : 1.1
 
     // project filter
     $(window).on('load', function () {
+        
         if(window.innerWidth > 945){
             document.querySelector(".menu-wrapper").style.height="1300px";
         };
@@ -2359,10 +2358,22 @@ Version         : 1.1
                     $('.menuItem8').html(`Desserts`);
                     $('.menuItem9').html(`Family Meals`);
                 }
-                
-                //Adds the menu content to each li element once these elements are clicked individually 
+                //Remove Active Class For ListItems In the Menu 
+                const listItemsLength = document.querySelector(".mainMenu").childNodes.length;
+                const listItems = document.querySelector(".mainMenu");
+                let removeActiveClass = ()=>{
+                for (let i = 0; i < listItemsLength; i++){
+                    if(listItems.childNodes[i].classList.contains("active")){
+                        listItems.childNodes[i].classList.remove("active");
+                        };
+                    };
+                };
 
+                //Adds the menu content to each li element once these elements are clicked individually 
                 $('.menuItem1').on('click', function(){
+                    removeActiveClass();
+                    this.classList.add("active");
+                    
                     if(window.innerWidth > 945){
                         document.querySelector(".menu-wrapper").style.height="1300px";
                     }else{
@@ -2493,11 +2504,14 @@ Version         : 1.1
                 });
 
                 $('.menuItem2').on('click', function(){
+                    removeActiveClass();
+                    this.classList.add("active");
                     if(window.innerWidth > 945){
                         document.querySelector(".menu-wrapper").style.height="1000px";
                     }else{
                         document.querySelector(".menu-wrapper").style.height="2400px";
                     };
+                    
                     $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                     <div class="filter-item cat2" style="text-align: center;">
                         <h1>Entrees</h1>
@@ -2661,6 +2675,9 @@ Version         : 1.1
                 });
 
                 $('.menuItem3').on('click', function(){
+                    removeActiveClass();
+                    this.classList.add("active");
+
                     if(window.innerWidth > 945){
                         document.querySelector(".menu-wrapper").style.height="700px";
                     }else{
@@ -2718,6 +2735,9 @@ Version         : 1.1
                 });
 
                 $('.menuItem4').on('click', function(){
+                    removeActiveClass();
+                    this.classList.add("active");
+
                     if(window.innerWidth > 945){
                         document.querySelector(".menu-wrapper").style.height="1800px";
                     }else{
@@ -3083,6 +3103,9 @@ Version         : 1.1
                 });
 
                 $('.menuItem5').on('click', function(){
+                    removeActiveClass();
+                    this.classList.add("active");
+
                     if(window.innerWidth > 945){
                         document.querySelector(".menu-wrapper").style.height="1570px";
                     }else{
@@ -3280,6 +3303,9 @@ Version         : 1.1
                 });
 
                 $('.menuItem6').on('click', function(){
+                    removeActiveClass();
+                    this.classList.add("active");
+
                     if(window.innerWidth > 945){
                         document.querySelector(".menu-wrapper").style.height="1500px";
                     }else{
@@ -3443,6 +3469,9 @@ Version         : 1.1
                 });
 
                 $('.menuItem7').on('click', function(){
+                    removeActiveClass();
+                    this.classList.add("active");
+
                     if(window.innerWidth > 945){
                         document.querySelector(".menu-wrapper").style.height="3070px";
                     }else{
@@ -3816,6 +3845,9 @@ Version         : 1.1
                 </div>`)});
 
                 $('.menuItem8').on('click', function(){
+                    removeActiveClass();
+                    this.classList.add("active");
+
                     if(window.innerWidth > 945){
                         document.querySelector(".menu-wrapper").style.height="1100px";
                     }else{
@@ -3984,6 +4016,9 @@ Version         : 1.1
                 });
 
                 $('.menuItem9').on('click', function(){
+                    removeActiveClass();
+                    this.classList.add("active");
+
                     if(window.innerWidth > 945){
                         document.querySelector(".menu-wrapper").style.height="3600px";
                     }else{
@@ -4535,9 +4570,23 @@ Version         : 1.1
                     $('.menuItem19').html(`Desserts`);
                     $('.menuItem20').html(`Drinks`);
                 }
+
+                //Remove Active Class For ListItems In the Menu 
+                const listItemsLength = document.querySelector(".mainMenu").childNodes.length;
+                const listItems = document.querySelector(".mainMenu");
+                let removeActiveClass = ()=>{
+                for (let i = 0; i < listItemsLength; i++){
+                    if(listItems.childNodes[i].classList.contains("active")){
+                        listItems.childNodes[i].classList.remove("active");
+                        };
+                    };
+                };
                 
                 //Adds the menu content to each li element once these elements are clicked individually 
                 $('.menuItem10').on('click', function(){
+                    removeActiveClass();
+                    this.classList.add("active");
+
                     if(window.innerWidth > 945){
                         document.querySelector(".menu-wrapper").style.height="4000px";
                     }else{
@@ -5274,6 +5323,9 @@ Version         : 1.1
             });
 
             $('.menuItem11').on('click', function(){
+                removeActiveClass();
+                this.classList.add("active");
+
                 if(window.innerWidth > 945){
                     document.querySelector(".menu-wrapper").style.height="700px";
                 }else{
@@ -5340,6 +5392,9 @@ Version         : 1.1
             });
 
             $('.menuItem12').on('click', function(){
+                removeActiveClass();
+                this.classList.add("active");
+
                 if(window.innerWidth > 945){
                     document.querySelector(".menu-wrapper").style.height="1450px";
                 }else{
@@ -5516,6 +5571,9 @@ Version         : 1.1
             });
 
             $('.menuItem13').on('click', function(){
+                removeActiveClass();
+                this.classList.add("active");
+
                 if(window.innerWidth > 945){
                     document.querySelector(".menu-wrapper").style.height="2570px";
                 }else{
@@ -5919,6 +5977,9 @@ Version         : 1.1
             });
 
             $('.menuItem14').on('click', function(){
+                removeActiveClass();
+                this.classList.add("active");
+
                 if(window.innerWidth > 945){
                     document.querySelector(".menu-wrapper").style.height="1300px";
                 }else{
@@ -6071,6 +6132,9 @@ Version         : 1.1
             });
 
             $('.menuItem15').on('click', function(){
+                removeActiveClass();
+                this.classList.add("active");
+
                 if(window.innerWidth > 945){
                     document.querySelector(".menu-wrapper").style.height="1450px";
                 }else{
@@ -6232,6 +6296,9 @@ Version         : 1.1
             });
 
             $('.menuItem16').on('click', function(){
+                removeActiveClass();
+                this.classList.add("active");
+
                 if(window.innerWidth > 945){
                     document.querySelector(".menu-wrapper").style.height="1200px";
                 }else{
@@ -6375,6 +6442,9 @@ Version         : 1.1
             });
 
             $('.menuItem17').on('click', function(){
+                removeActiveClass();
+                this.classList.add("active");
+
                 if(window.innerWidth > 945){
                     document.querySelector(".menu-wrapper").style.height="770px";
                 }else{
@@ -6479,6 +6549,9 @@ Version         : 1.1
             });
 
             $('.menuItem18').on('click', function(){
+                removeActiveClass();
+                this.classList.add("active");
+
                 if(window.innerWidth > 945){
                     document.querySelector(".menu-wrapper").style.height="1050px";
                 }else{
@@ -6596,6 +6669,9 @@ Version         : 1.1
             });
 
             $('.menuItem19').on('click', function(){
+                removeActiveClass();
+                this.classList.add("active");
+
                 if(window.innerWidth > 945){
                     document.querySelector(".menu-wrapper").style.height="1150px";
                 }else{
@@ -6765,6 +6841,9 @@ Version         : 1.1
             });
 
             $('.menuItem20').on('click', function(){
+                removeActiveClass();
+                this.classList.add("active");
+
                 if(window.innerWidth > 945){
                     document.querySelector(".menu-wrapper").style.height="800px";
                 }else{
@@ -6868,6 +6947,7 @@ Version         : 1.1
                     $(this).siblings("li.active").removeClass("active"); 
                     $(this).addClass("active");
                 });
+                
             });
         }
     });
@@ -6879,6 +6959,8 @@ Version         : 1.1
 
 
 })(jQuery);
+
+
 
 //CSS Gallery
 const modal1 = document.getElementById("myModal1");
