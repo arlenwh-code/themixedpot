@@ -736,6 +736,8 @@ header top css
   }
 }
 
+
+
 @media all and (max-width: 992px) {
   .header-top {
     display: none;
@@ -748,6 +750,14 @@ nav menu css
 
 .main {
   margin-top: -10rem;
+}
+
+.mPrep{
+  color: #3c0658;
+}
+
+.link-hover:hover{
+  color: #CDA45E;
 }
 
 @media all and (min-width: 992px) {
@@ -1007,6 +1017,19 @@ button.navbar-toggler:focus {
     color: #CDA45E !important;
   }
 
+  .nav-item2{
+    color: #3c0758;
+    background-color: #CDA45E;
+    transition: all .5s ease-in-out;
+    border: 1px solid #000;
+    border-radius: 28px;
+  }
+
+  .nav-item2:hover{
+    color: #FFF !important;
+    background-color: #CDA45E;
+  }
+
   .navbar-toggler-icon {
     font-size: 32px;
     color: #3c0758;
@@ -1019,7 +1042,7 @@ button.navbar-toggler:focus {
     border-radius: 0px;
   }
 
-  .navbar.fixed-top .navbar-toggler-icon {
+  .navbar.fixed-top .navbar-toggler-icon .mPrep{
     color: #3c0758;
   }
 

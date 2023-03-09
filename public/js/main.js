@@ -121,6 +121,30 @@ Version         : 1.1
     // preloader
     $(window).on('load', function () {
         $(".preloader").fadeOut("slow");
+
+        //content for mobile navbar
+        if(window.innerWidth < 992){
+        const newli = document.createElement("li");
+        const newli2 = document.createElement("li");
+        const newDiv = document.createElement("div");
+    
+        document.querySelector(".ulNav").append(newli);
+        document.querySelector(".ulNav").append(newli2);
+        document.querySelector(".ulNav").append(newDiv);
+    
+        newli.classList.add("text-center");
+        newli2.classList.add("text-center");
+        newDiv.classList.add("text-center");
+        newDiv.classList.add("mt-2");
+    
+        newli.innerHTML = `<a class="nav-item2" href="/#contact"><button class="nav-item2">Contact For Quote</button></a>`;
+        newli2.innerHTML = `<p class="mPrep">For Meal Prep Services Please Contact By Phone: &nbsp;</p><a class = "link-hover" href="tel:347-880-9223">(347)-880-9223</a>`;
+        newDiv.innerHTML = `<a class = "link-hover" href="https://www.facebook.com/Themixedpotllc"><i class="fab fa-facebook-f ms-3 mx-3"></i></a>
+        <a class = "link-hover" href="https://twitter.com/themixedpotllc"><i class="fab fa-twitter mx-3"></i></a>
+        <a class = "link-hover" href="https://www.instagram.com/official_themixedpot"><i class="fab fa-instagram mx-3"></i></a>
+        <a class = "link-hover" href="https://wa.me/13478809223"><i class="fab fa-whatsapp mx-3"></i></a>`;
+        };
+    
     });
 
 
@@ -149,7 +173,6 @@ Version         : 1.1
         preloader: false,
         fixedContentPos: false
     });
-
 
     // scroll to top
     $(window).scroll(function () {
