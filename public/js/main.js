@@ -209,8 +209,9 @@ Version         : 1.1
 
     // project filter
     $(window).on('load', function () {
-        
-        if(window.innerWidth < 700){
+        if(window.innerWidth > 900){
+            document.querySelector(".menu-wrapper").style.height="1350px";
+        }else if(window.innerWidth < 700 && window.innerWidth < 900){
             document.querySelector(".menu-wrapper").style.height="3000px";
         }else if(window.innerWidth > 700){
             document.querySelector(".menu-wrapper").style.height="1750px";
@@ -229,7 +230,9 @@ Version         : 1.1
             //Initial Menu Items which work with original html code
             //Uses the menu items originally created with html to create a dynamic menu that loads as soon as the page loads
             $('.initialMenuItem1').on('click', function(){
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="1350px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="3000px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="1750px";
@@ -359,7 +362,9 @@ Version         : 1.1
             });
 
             $('.initialMenuItem2').on('click', function(){
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="1050px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="2300px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="1350px";
@@ -527,7 +532,9 @@ Version         : 1.1
             });
 
             $('.initialMenuItem3').on('click', function(){
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="750px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="1400px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="950px";
@@ -584,7 +591,9 @@ Version         : 1.1
             });
 
             $('.initialMenuItem4').on('click', function(){
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="1850px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="4800px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="2550px";
@@ -949,7 +958,9 @@ Version         : 1.1
             });
 
             $('.initialMenuItem5').on('click', function(){
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="1600px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="4150px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="2150px";
@@ -1147,7 +1158,9 @@ Version         : 1.1
             });
 
             $('.initialMenuItem6').on('click', function(){
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="1500px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="3550px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="2050px";
@@ -1311,7 +1324,9 @@ Version         : 1.1
             });
 
             $('.initialMenuItem7').on('click', function(){
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="3175px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="8000px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="4450px";
@@ -1686,7 +1701,9 @@ Version         : 1.1
             });
 
             $('.initialMenuItem8').on('click', function(){
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="1100px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="2400px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="1450px";
@@ -1855,7 +1872,9 @@ Version         : 1.1
             });
 
             $('.initialMenuItem9').on('click', function(){
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="3700px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="8900px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="4950px";
@@ -2407,7 +2426,9 @@ Version         : 1.1
                     removeActiveClass();
                     this.classList.add("active");
                     
-                    if(window.innerWidth < 700){
+                    if(window.innerWidth > 900){
+                        document.querySelector(".menu-wrapper").style.height="1350px";
+                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
                         document.querySelector(".menu-wrapper").style.height="3000px";
                     }else if(window.innerWidth > 700){
                         document.querySelector(".menu-wrapper").style.height="1750px";
@@ -2539,7 +2560,10 @@ Version         : 1.1
                 $('.menuItem2').on('click', function(){
                     removeActiveClass();
                     this.classList.add("active");
-                    if(window.innerWidth < 700){
+
+                    if(window.innerWidth > 900){
+                        document.querySelector(".menu-wrapper").style.height="1050px";
+                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
                         document.querySelector(".menu-wrapper").style.height="2300px";
                     }else if(window.innerWidth > 700){
                         document.querySelector(".menu-wrapper").style.height="1350px";
@@ -2711,7 +2735,9 @@ Version         : 1.1
                     removeActiveClass();
                     this.classList.add("active");
 
-                    if(window.innerWidth < 700){
+                    if(window.innerWidth > 900){
+                        document.querySelector(".menu-wrapper").style.height="750px";
+                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
                         document.querySelector(".menu-wrapper").style.height="1400px";
                     }else if(window.innerWidth > 700){
                         document.querySelector(".menu-wrapper").style.height="950px";
@@ -2772,7 +2798,9 @@ Version         : 1.1
                     removeActiveClass();
                     this.classList.add("active");
 
-                    if(window.innerWidth < 700){
+                    if(window.innerWidth > 900){
+                        document.querySelector(".menu-wrapper").style.height="1850px";
+                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
                         document.querySelector(".menu-wrapper").style.height="4800px";
                     }else if(window.innerWidth > 700){
                         document.querySelector(".menu-wrapper").style.height="2550px";
@@ -3141,7 +3169,9 @@ Version         : 1.1
                     removeActiveClass();
                     this.classList.add("active");
 
-                    if(window.innerWidth < 700){
+                    if(window.innerWidth > 900){
+                        document.querySelector(".menu-wrapper").style.height="1600px";
+                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
                         document.querySelector(".menu-wrapper").style.height="4150px";
                     }else if(window.innerWidth > 700){
                         document.querySelector(".menu-wrapper").style.height="2150px";
@@ -3342,7 +3372,9 @@ Version         : 1.1
                     removeActiveClass();
                     this.classList.add("active");
 
-                    if(window.innerWidth < 700){
+                    if(window.innerWidth > 900){
+                        document.querySelector(".menu-wrapper").style.height="1500px";
+                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
                         document.querySelector(".menu-wrapper").style.height="3550px";
                     }else if(window.innerWidth > 700){
                         document.querySelector(".menu-wrapper").style.height="2050px";
@@ -3509,7 +3541,9 @@ Version         : 1.1
                     removeActiveClass();
                     this.classList.add("active");
 
-                    if(window.innerWidth < 700){
+                    if(window.innerWidth > 900){
+                        document.querySelector(".menu-wrapper").style.height="3175px";
+                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
                         document.querySelector(".menu-wrapper").style.height="8000px";
                     }else if(window.innerWidth > 700){
                         document.querySelector(".menu-wrapper").style.height="4450px";
@@ -3886,7 +3920,9 @@ Version         : 1.1
                     removeActiveClass();
                     this.classList.add("active");
 
-                    if(window.innerWidth < 700){
+                    if(window.innerWidth > 900){
+                        document.querySelector(".menu-wrapper").style.height="1100px";
+                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
                         document.querySelector(".menu-wrapper").style.height="2400px";
                     }else if(window.innerWidth > 700){
                         document.querySelector(".menu-wrapper").style.height="1450px";
@@ -4058,7 +4094,9 @@ Version         : 1.1
                     removeActiveClass();
                     this.classList.add("active");
 
-                    if(window.innerWidth < 700){
+                    if(window.innerWidth > 900){
+                        document.querySelector(".menu-wrapper").style.height="3700px";
+                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
                         document.querySelector(".menu-wrapper").style.height="8900px";
                     }else if(window.innerWidth > 700){
                         document.querySelector(".menu-wrapper").style.height="4950px";
@@ -4626,8 +4664,9 @@ Version         : 1.1
                 $('.menuItem10').on('click', function(){
                     removeActiveClass();
                     this.classList.add("active");
-
-                    if(window.innerWidth < 700){
+                    if(window.innerWidth > 900){
+                        document.querySelector(".menu-wrapper").style.height="4000px";
+                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
                         document.querySelector(".menu-wrapper").style.height="10400px";
                     }else if(window.innerWidth > 700){
                         document.querySelector(".menu-wrapper").style.height="5475px";
@@ -5365,8 +5404,9 @@ Version         : 1.1
             $('.menuItem11').on('click', function(){
                 removeActiveClass();
                 this.classList.add("active");
-
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="700px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="1525px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="850px";
@@ -5434,8 +5474,9 @@ Version         : 1.1
             $('.menuItem12').on('click', function(){
                 removeActiveClass();
                 this.classList.add("active");
-
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="1500px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="3425px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="2050px";
@@ -5613,8 +5654,9 @@ Version         : 1.1
             $('.menuItem13').on('click', function(){
                 removeActiveClass();
                 this.classList.add("active");
-
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="2600px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="5900px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="3475px";
@@ -6020,7 +6062,9 @@ Version         : 1.1
                 removeActiveClass();
                 this.classList.add("active");
 
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="1200px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="2800px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="1650px";
@@ -6175,7 +6219,9 @@ Version         : 1.1
                 removeActiveClass();
                 this.classList.add("active");
 
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="1500px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="3500px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="2050px";
@@ -6339,7 +6385,9 @@ Version         : 1.1
                 removeActiveClass();
                 this.classList.add("active");
 
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="1200px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="2925px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="1600px";
@@ -6485,7 +6533,9 @@ Version         : 1.1
                 removeActiveClass();
                 this.classList.add("active");
 
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="800px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="1850px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="1060px";
@@ -6592,7 +6642,9 @@ Version         : 1.1
                 removeActiveClass();
                 this.classList.add("active");
 
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="1100px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="2350px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="1500px";
@@ -6712,7 +6764,9 @@ Version         : 1.1
                 removeActiveClass();
                 this.classList.add("active");
 
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="1150px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="2500px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="1500px";
@@ -6884,7 +6938,9 @@ Version         : 1.1
                 removeActiveClass();
                 this.classList.add("active");
 
-                if(window.innerWidth < 700){
+                if(window.innerWidth > 900){
+                    document.querySelector(".menu-wrapper").style.height="800px";
+                }else if(window.innerWidth < 700 && window.innerWidth < 900){
                     document.querySelector(".menu-wrapper").style.height="1400px";
                 }else if(window.innerWidth > 700){
                     document.querySelector(".menu-wrapper").style.height="975px";
