@@ -137,7 +137,7 @@ Version         : 1.1
         newDiv.classList.add("text-center");
         newDiv.classList.add("mt-2");
     
-        newli.innerHTML = `<a class="nav-item2" href="/#contact"><button class="nav-item2">Contact For Quote</button></a>`;
+        newli.innerHTML = `<a class="nav-item2" href="/contact"><button class="nav-item2">Contact For Quote</button></a>`;
         newli2.innerHTML = `<p class="mPrep">For Meal Prep Services Please Contact By Phone: &nbsp;</p><a class = "link-hover" href="tel:347-880-9223">(347)-880-9223</a>`;
         newDiv.innerHTML = `<a class = "link-hover" href="https://www.facebook.com/Themixedpotllc"><i class="fab fa-facebook-f ms-3 mx-3"></i></a>
         <a class = "link-hover" href="https://twitter.com/themixedpotllc"><i class="fab fa-twitter mx-3"></i></a>
