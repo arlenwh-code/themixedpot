@@ -121,31 +121,6 @@ Version         : 1.1
     // preloader
     $(window).on('load', function () {
         $(".preloader").fadeOut("slow");
-
-        //content for mobile navbar
-        if(window.innerWidth < 992){
-        const newli = document.createElement("li");
-        const newli2 = document.createElement("li");
-        const newDiv = document.createElement("div");
-    
-        document.querySelector(".ulNav").append(newli);
-        document.querySelector(".ulNav").append(newli2);
-        document.querySelector(".ulNav").append(newDiv);
-    
-        newli.classList.add("text-center");
-        newli.classList.add("mt-3");
-        newli2.classList.add("text-center");
-        newDiv.classList.add("text-center");
-        newDiv.classList.add("mt-2");
-    
-        newli.innerHTML = `<a class="nav-item2" href="/contact"><button class="nav-item2">Contact For Quote</button></a>`;
-        newli2.innerHTML = `<p class="mPrep">For Meal Prep Services Please Contact By Phone: &nbsp;</p><a class = "link-hover" href="tel:347-880-9223">(347)-880-9223</a>`;
-        newDiv.innerHTML = `<a class = "link-hover" href="https://www.facebook.com/Themixedpotllc"><i class="fab fa-facebook-f fa-lg ms-3 mx-3"></i></a>
-        <a class = "link-hover" href="https://twitter.com/themixedpotllc"><i class="fab fa-twitter fa-lg mx-3"></i></a>
-        <a class = "link-hover" href="https://www.instagram.com/official_themixedpot"><i class="fab fa-instagram fa-lg mx-3"></i></a>
-        <a class = "link-hover" href="https://wa.me/13478809223"><i class="fab fa-whatsapp fa-lg mx-3"></i></a>`;
-        };
-    
     });
 
 
@@ -209,15 +184,6 @@ Version         : 1.1
 
     // project filter
     $(window).on('load', function () {
-        if(window.innerWidth > 900){
-            document.querySelector(".menu-wrapper").style.height="1350px";
-        }else if(window.innerWidth < 700 && window.innerWidth < 900){
-            document.querySelector(".menu-wrapper").style.height="3000px";
-        }else if(window.innerWidth > 700){
-            document.querySelector(".menu-wrapper").style.height="1750px";
-            document.querySelector(".menuContainer").style.position = "relative";
-            document.querySelector(".menuContainer").style.top = "50px";
-        };
         $('.filter-box2').remove();
         if( $(".filter-box").children().length > 0 ) {
             $(".filter-box").isotope({
@@ -230,13 +196,6 @@ Version         : 1.1
             //Initial Menu Items which work with original html code
             //Uses the menu items originally created with html to create a dynamic menu that loads as soon as the page loads
             $('.initialMenuItem1').on('click', function(){
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="1350px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="3000px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="1750px";
-                };
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="filter-item cat1" style="text-align: center;">
                     <h1>Platters</h1>
@@ -362,13 +321,6 @@ Version         : 1.1
             });
 
             $('.initialMenuItem2').on('click', function(){
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="1050px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="2300px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="1350px";
-                };
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="filter-item cat2" style="text-align: center;">
                     <h1>Entrees</h1>
@@ -532,13 +484,6 @@ Version         : 1.1
             });
 
             $('.initialMenuItem3').on('click', function(){
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="750px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="1400px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="950px";
-                };
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="filter-item cat5" style="text-align: center;">
                     <h1>Salads</h1>
@@ -591,13 +536,6 @@ Version         : 1.1
             });
 
             $('.initialMenuItem4').on('click', function(){
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="1850px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="4800px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="2550px";
-                };
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="text-center filter-item cat6">
                     <h1>Sides</h1>
@@ -958,14 +896,6 @@ Version         : 1.1
             });
 
             $('.initialMenuItem5').on('click', function(){
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="1600px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="4150px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="2150px";
-                };
-
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="col-md-12 filter-item cat7 text-center">
                     <h1>Sandwiches</h1>
@@ -1158,14 +1088,6 @@ Version         : 1.1
             });
 
             $('.initialMenuItem6').on('click', function(){
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="1500px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="3550px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="2050px";
-                };
-
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="filter-item cat8" style="text-align: center;">
                     <h1>Drinks</h1>
@@ -1324,14 +1246,6 @@ Version         : 1.1
             });
 
             $('.initialMenuItem7').on('click', function(){
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="3175px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="8000px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="4450px";
-                };
-
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="filter-item cat9">
                     <h1 class="text-center">Quick Bites</h1>
@@ -1701,14 +1615,6 @@ Version         : 1.1
             });
 
             $('.initialMenuItem8').on('click', function(){
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="1100px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="2400px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="1450px";
-                };
-
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="text-center filter-item cat10">
                     <h1>Desserts</h1>
@@ -1872,14 +1778,6 @@ Version         : 1.1
             });
 
             $('.initialMenuItem9').on('click', function(){
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="3700px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="8900px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="4950px";
-                };
-
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="filter-item cat11" style="text-align: center;">
                     <h1>Family Meals</h1>
@@ -2425,14 +2323,6 @@ Version         : 1.1
                 $('.menuItem1').on('click', function(){
                     removeActiveClass();
                     this.classList.add("active");
-                    
-                    if(window.innerWidth > 900){
-                        document.querySelector(".menu-wrapper").style.height="1350px";
-                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                        document.querySelector(".menu-wrapper").style.height="3000px";
-                    }else if(window.innerWidth > 700){
-                        document.querySelector(".menu-wrapper").style.height="1750px";
-                    };
                     $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                     <div class="filter-item cat1" style="text-align: center;">
                         <h1>Platters</h1>
@@ -2560,15 +2450,6 @@ Version         : 1.1
                 $('.menuItem2').on('click', function(){
                     removeActiveClass();
                     this.classList.add("active");
-
-                    if(window.innerWidth > 900){
-                        document.querySelector(".menu-wrapper").style.height="1050px";
-                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                        document.querySelector(".menu-wrapper").style.height="2300px";
-                    }else if(window.innerWidth > 700){
-                        document.querySelector(".menu-wrapper").style.height="1350px";
-                    };
-                    
                     $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                     <div class="filter-item cat2" style="text-align: center;">
                         <h1>Entrees</h1>
@@ -2734,15 +2615,6 @@ Version         : 1.1
                 $('.menuItem3').on('click', function(){
                     removeActiveClass();
                     this.classList.add("active");
-
-                    if(window.innerWidth > 900){
-                        document.querySelector(".menu-wrapper").style.height="750px";
-                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                        document.querySelector(".menu-wrapper").style.height="1400px";
-                    }else if(window.innerWidth > 700){
-                        document.querySelector(".menu-wrapper").style.height="950px";
-                    };
-
                     $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                     <div class="filter-item cat5" style="text-align: center;">
                         <h1>Salads</h1>
@@ -2797,15 +2669,6 @@ Version         : 1.1
                 $('.menuItem4').on('click', function(){
                     removeActiveClass();
                     this.classList.add("active");
-
-                    if(window.innerWidth > 900){
-                        document.querySelector(".menu-wrapper").style.height="1850px";
-                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                        document.querySelector(".menu-wrapper").style.height="4800px";
-                    }else if(window.innerWidth > 700){
-                        document.querySelector(".menu-wrapper").style.height="2550px";
-                    };
-
                     $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                     <div class="text-center filter-item cat6">
                         <h1>Sides</h1>
@@ -3168,15 +3031,6 @@ Version         : 1.1
                 $('.menuItem5').on('click', function(){
                     removeActiveClass();
                     this.classList.add("active");
-
-                    if(window.innerWidth > 900){
-                        document.querySelector(".menu-wrapper").style.height="1600px";
-                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                        document.querySelector(".menu-wrapper").style.height="4150px";
-                    }else if(window.innerWidth > 700){
-                        document.querySelector(".menu-wrapper").style.height="2150px";
-                    };
-
                     $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                     <div class="col-md-12 filter-item cat7 text-center">
                         <h1>Sandwiches</h1>
@@ -3371,15 +3225,6 @@ Version         : 1.1
                 $('.menuItem6').on('click', function(){
                     removeActiveClass();
                     this.classList.add("active");
-
-                    if(window.innerWidth > 900){
-                        document.querySelector(".menu-wrapper").style.height="1500px";
-                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                        document.querySelector(".menu-wrapper").style.height="3550px";
-                    }else if(window.innerWidth > 700){
-                        document.querySelector(".menu-wrapper").style.height="2050px";
-                    };
-
                     $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                     <div class="filter-item cat8" style="text-align: center;">
                         <h1>Drinks</h1>
@@ -3540,15 +3385,6 @@ Version         : 1.1
                 $('.menuItem7').on('click', function(){
                     removeActiveClass();
                     this.classList.add("active");
-
-                    if(window.innerWidth > 900){
-                        document.querySelector(".menu-wrapper").style.height="3175px";
-                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                        document.querySelector(".menu-wrapper").style.height="8000px";
-                    }else if(window.innerWidth > 700){
-                        document.querySelector(".menu-wrapper").style.height="4450px";
-                    };
-
                     $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                     <div class="filter-item cat9">
                         <h1 class="text-center">Quick Bites</h1>
@@ -3919,15 +3755,6 @@ Version         : 1.1
                 $('.menuItem8').on('click', function(){
                     removeActiveClass();
                     this.classList.add("active");
-
-                    if(window.innerWidth > 900){
-                        document.querySelector(".menu-wrapper").style.height="1100px";
-                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                        document.querySelector(".menu-wrapper").style.height="2400px";
-                    }else if(window.innerWidth > 700){
-                        document.querySelector(".menu-wrapper").style.height="1450px";
-                    };
-
                     $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                     <div class="text-center filter-item cat10">
                         <h1>Desserts</h1>
@@ -4093,15 +3920,6 @@ Version         : 1.1
                 $('.menuItem9').on('click', function(){
                     removeActiveClass();
                     this.classList.add("active");
-
-                    if(window.innerWidth > 900){
-                        document.querySelector(".menu-wrapper").style.height="3700px";
-                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                        document.querySelector(".menu-wrapper").style.height="8900px";
-                    }else if(window.innerWidth > 700){
-                        document.querySelector(".menu-wrapper").style.height="4950px";
-                    };
-
                     $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                     <div class="filter-item cat11" style="text-align: center;">
                         <h1>Family Meals</h1>
@@ -4664,13 +4482,6 @@ Version         : 1.1
                 $('.menuItem10').on('click', function(){
                     removeActiveClass();
                     this.classList.add("active");
-                    if(window.innerWidth > 900){
-                        document.querySelector(".menu-wrapper").style.height="4000px";
-                    }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                        document.querySelector(".menu-wrapper").style.height="10400px";
-                    }else if(window.innerWidth > 700){
-                        document.querySelector(".menu-wrapper").style.height="5475px";
-                    };
                     $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                     <div class="filter-item cat12" style="text-align: center;">
                         <h1>Mixed Pot International Entrees</h1>
@@ -5404,13 +5215,6 @@ Version         : 1.1
             $('.menuItem11').on('click', function(){
                 removeActiveClass();
                 this.classList.add("active");
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="700px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="1525px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="850px";
-                };
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="filter-item cat13" style="text-align: center;">
                     <h1>African Food</h1>
@@ -5474,13 +5278,6 @@ Version         : 1.1
             $('.menuItem12').on('click', function(){
                 removeActiveClass();
                 this.classList.add("active");
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="1500px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="3425px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="2050px";
-                };
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="filter-item cat14" style="text-align: center;">
                     <h1>Salads</h1>
@@ -5654,13 +5451,6 @@ Version         : 1.1
             $('.menuItem13').on('click', function(){
                 removeActiveClass();
                 this.classList.add("active");
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="2600px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="5900px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="3475px";
-                };
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="filter-item cat15" style="text-align: center;">
                     <h1>Side Dishes</h1>
@@ -6061,14 +5851,6 @@ Version         : 1.1
             $('.menuItem14').on('click', function(){
                 removeActiveClass();
                 this.classList.add("active");
-
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="1200px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="2800px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="1650px";
-                };
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="filter-item cat16" style="text-align: center;">
                     <h1>Charcuterie Boards</h1>
@@ -6218,14 +6000,6 @@ Version         : 1.1
             $('.menuItem15').on('click', function(){
                 removeActiveClass();
                 this.classList.add("active");
-
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="1500px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="3500px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="2050px";
-                };
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="filter-item cat17" style="text-align: center;">
                     <h1>Sandwiches</h1>
@@ -6384,14 +6158,6 @@ Version         : 1.1
             $('.menuItem16').on('click', function(){
                 removeActiveClass();
                 this.classList.add("active");
-
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="1200px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="2925px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="1600px";
-                };
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="filter-item cat18" style="text-align: center;">
                     <h1>Patties</h1>
@@ -6532,14 +6298,6 @@ Version         : 1.1
             $('.menuItem17').on('click', function(){
                 removeActiveClass();
                 this.classList.add("active");
-
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="800px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="1850px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="1060px";
-                };
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="filter-item cat19" style="text-align: center;">
                     <h1>Skewers</h1>
@@ -6641,14 +6399,6 @@ Version         : 1.1
             $('.menuItem18').on('click', function(){
                 removeActiveClass();
                 this.classList.add("active");
-
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="1100px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="2350px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="1500px";
-                };
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="filter-item cat20" style="text-align: center;">
                     <h1>Quick Bites</h1>
@@ -6763,14 +6513,6 @@ Version         : 1.1
             $('.menuItem19').on('click', function(){
                 removeActiveClass();
                 this.classList.add("active");
-
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="1150px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="2500px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="1500px";
-                };
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="text-center filter-item cat21">
                     <h1>Desserts</h1>
@@ -6937,14 +6679,6 @@ Version         : 1.1
             $('.menuItem20').on('click', function(){
                 removeActiveClass();
                 this.classList.add("active");
-
-                if(window.innerWidth > 900){
-                    document.querySelector(".menu-wrapper").style.height="800px";
-                }else if(window.innerWidth < 700 && window.innerWidth < 900){
-                    document.querySelector(".menu-wrapper").style.height="1400px";
-                }else if(window.innerWidth > 700){
-                    document.querySelector(".menu-wrapper").style.height="975px";
-                };
                 $('.menuContainer').html(`<div class="row filter-box2 popup-gallery">
                 <div class="filter-item cat22" style="text-align: center;">
                     <h1>Drinks</h1>

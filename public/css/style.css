@@ -752,10 +752,6 @@ nav menu css
   margin-top: -10rem;
 }
 
-.mPrep{
-  color: #3c0658;
-}
-
 .link-hover:hover{
   color: #CDA45E;
 }
@@ -896,6 +892,18 @@ nav menu css
     margin-left: 40px;
   }
 
+  .mPrep{
+    display: none;
+    color: #3c0658;
+  }
+
+  .mPrep2{
+    display: none;
+  }
+
+  .ulNav2-wrapper{
+    display: none;
+  }
 }
 
 /*bootstrap menu*/
@@ -977,6 +985,23 @@ button.navbar-toggler:focus {
   }
 }
 
+.nav-item2{
+  color: #3c0758;
+  background-color: transparent;
+  transition: all .5s ease-in-out;
+  border: 2px solid #CDA45E;
+  font-size: 16px;
+  font-weight:400;
+  text-transform: uppercase;
+  padding: 8px 25px;
+  border-radius: 28px;
+}
+
+.nav-item2:hover{
+  color: #FFF !important;
+  background-color: #CDA45E;
+}
+
 @media all and (max-width: 991px) {
   .navbar {
     top: 0;
@@ -1002,6 +1027,24 @@ button.navbar-toggler:focus {
     background-color: #fff;
   }
 
+  .mPrep{
+    color: #3c0658;
+  }
+
+  .nav-item2{
+    color: #3c0758;
+    background-color: #CDA45E;
+    transition: all .5s ease-in-out;
+    border: 1px solid #000;
+    border-radius: 28px;
+  }
+  
+  .nav-item2:hover{
+    color: #FFF !important;
+    background-color: #CDA45E;
+  }
+
+  
   .dropdown-toggle::after {
     float: right;
     margin-top: 12px;
@@ -1015,19 +1058,6 @@ button.navbar-toggler:focus {
 
   .navbar .nav-item .nav-link:hover {
     color: #CDA45E !important;
-  }
-
-  .nav-item2{
-    color: #3c0758;
-    background-color: #CDA45E;
-    transition: all .5s ease-in-out;
-    border: 1px solid #000;
-    border-radius: 28px;
-  }
-
-  .nav-item2:hover{
-    color: #FFF !important;
-    background-color: #CDA45E;
   }
 
   .navbar-toggler-icon {
@@ -1048,6 +1078,15 @@ button.navbar-toggler:focus {
 
   .header-nav-right {
     display: none;
+  }
+
+  .ulNav2{
+    width:fit-content; 
+    margin: 0 auto;
+  }
+
+  .ulNav2Item{
+    float: left;
   }
 }
 
@@ -1393,8 +1432,12 @@ menu css
   margin-top: 40px;
 }
 
-.menu-wrapper .menu-item {
+.menu-wrapper{
   display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
   align-items: center;
   justify-content: space-between;
   background: #fff;
@@ -3250,6 +3293,7 @@ footer css
 ====================== */
 
 .footer-area {
+  border: 2px solid #000;
   background: rgba(255, 255, 255, 92%);
   box-shadow:0px -7px 15px -1px rgba(0, 0, 0, 0.10);
   position: relative;
@@ -3258,15 +3302,29 @@ footer css
 
 
 .footer-widget-box {
+  border: 2px solid #000;
   margin-bottom: 20px;
 }
 
 .footer-widget {
+  border: 2px solid #000;
   position: relative;
   z-index: 1;
 }
 
+.footer-container{
+  border: 2px solid #000;
+}
+
+.footer-mPrep{
+  border:2px solid #000;
+  display: inline;
+}
+
+
+
 .footer-logo img {
+  border: 2px solid #000;
   width: 240px;
   margin-bottom: 30px;
 }
@@ -3360,6 +3418,7 @@ footer css
 }
 
 .footer-social {
+  border: 2px solid #000;
   display: flex;
   gap: 15px;
   margin-top: 40px;
@@ -3570,9 +3629,25 @@ footer css
   }
 }
 
+@media all and (min-width: 767px) {
+  .footer-mPrep {
+    height: 70px;
+  }
+
+  .mPrep-contact{
+    position: relative;
+    left: 125px;
+    bottom: 30px;
+  }
+}
+
 @media all and (max-width: 767px) {
   .footer-widget-wrapper {
     padding-bottom: 0px;
+  }
+
+  .footer-mPrep{
+    text-align: center;
   }
 }
 
