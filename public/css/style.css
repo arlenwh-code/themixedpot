@@ -1088,6 +1088,10 @@ button.navbar-toggler:focus {
   .ulNav2Item{
     float: left;
   }
+
+  .footer-mPrep-content-item{
+    text-align: center;
+  }
 }
 
 /* ===================
@@ -1405,6 +1409,12 @@ about css
 @media all and (min-width: 768px) and (max-width: 992px) {
   .about-img::before {
     width: 70%;
+  }
+}
+
+@media all and (min-width: 992px){
+  .footer-mPrep-contact{
+    left: 30%;
   }
 }
 
@@ -3293,7 +3303,6 @@ footer css
 ====================== */
 
 .footer-area {
-  border: 2px solid #000;
   background: rgba(255, 255, 255, 92%);
   box-shadow:0px -7px 15px -1px rgba(0, 0, 0, 0.10);
   position: relative;
@@ -3302,18 +3311,12 @@ footer css
 
 
 .footer-widget-box {
-  border: 2px solid #000;
   margin-bottom: 20px;
 }
 
 .footer-widget {
-  border: 2px solid #000;
   position: relative;
   z-index: 1;
-}
-
-.footer-container{
-  border: 2px solid #000;
 }
 
 .footer-mPrep{
@@ -3323,8 +3326,15 @@ footer css
 
 
 
+.footer-mPrep-content{
+  color: #3c0658;
+}
+
+.footer-mPrep-contact{
+  margin: 20px auto;
+}
+
 .footer-logo img {
-  border: 2px solid #000;
   width: 240px;
   margin-bottom: 30px;
 }
@@ -3418,7 +3428,6 @@ footer css
 }
 
 .footer-social {
-  border: 2px solid #000;
   display: flex;
   gap: 15px;
   margin-top: 40px;
@@ -3636,7 +3645,6 @@ footer css
 
   .mPrep-contact{
     position: relative;
-    left: 125px;
     bottom: 30px;
   }
 }
