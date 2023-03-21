@@ -3,7 +3,9 @@ const app = express();
 const ejs = require("ejs");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
+const http = require("http");
 const https = require("https");
+const enforce = require("express-sslify");
 const path = require("path");
 require("dotenv").config();
 let port = process.env.PORT || 3000;
@@ -12,7 +14,7 @@ let port = process.env.PORT || 3000;
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({extended: true}));
-
+app.use(enforce.HTTPS());
 
 
 app.get("/", (req, res)=>{
