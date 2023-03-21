@@ -9,11 +9,12 @@ const path = require("path");
 require("dotenv").config();
 let port = process.env.PORT || 3000;
 
-app.use(sslRedirect());
+
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({extended: true}));
 
+app.use(sslRedirect());
 
 app.get("/", (req, res)=>{
     res.render("home");
