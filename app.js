@@ -1,4 +1,3 @@
-var sslRedirect = require('heroku-ssl-redirect');
 const express = require("express");
 const app = express();
 const ejs = require("ejs");
@@ -14,7 +13,7 @@ app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.use(sslRedirect());
+
 
 app.get("/", (req, res)=>{
     res.render("home");
