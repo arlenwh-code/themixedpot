@@ -1,3 +1,4 @@
+const sslRedirect = require('heroku-ssl-redirect');
 const express = require("express");
 const app = express();
 const ejs = require("ejs");
@@ -8,6 +9,7 @@ const path = require("path");
 require("dotenv").config();
 let port = process.env.PORT || 3000;
 
+app.use(sslRedirect());
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({extended: true}));
