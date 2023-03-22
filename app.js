@@ -101,7 +101,7 @@ app.post("/signup", (req, res)=>{
      };
 
     const jsonData = JSON.stringify(data);
-    const dc = process.env.DC;
+    const dc = us10;
     const listId = process.env.LIST_ID;
     const userAuth=process.env.USERAUTH;
     const apiKey = process.env.MAILCHIMP_API_KEY;
