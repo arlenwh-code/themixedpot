@@ -1,11 +1,8 @@
 const express = require("express");
 const app = express();
-const ejs = require("ejs");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
-const http = require("http");
 const https = require("https");
-const enforce = require("express-sslify");
 const path = require("path");
 require("dotenv").config();
 let port = process.env.PORT || 3000;
@@ -14,7 +11,12 @@ let port = process.env.PORT || 3000;
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(enforce.HTTPS({trustProtoHeader: true}));
+
+if(app.get("env")==="production"){
+    const enforce = require("express-sslify");
+    app.use(enforce.HTTPS({trustProtoHeader: true}));
+}
+
 
 
 app.get("/", (req, res)=>{
@@ -44,21 +46,19 @@ app.get("/contact", (req, res)=>{
 app.post("/contact", (req, res)=>{
     async function main() {
         // create reusable transporter object using the default SMTP transport
-        const smtpHost = process.env.smtpHost;
-        const smtpPort = process.env.smtpPort;
-        const userName = process.env.userName;
-        const userPWD = process.env.userPWD;
+        const smtpHost = process.env.SMTP_HOST;
+        const smtpPort = process.env.SMTP_PORT;
         let transporter = nodemailer.createTransport({
           host: smtpHost,
           port: smtpPort,
           secure: false, // true for 465, false for other ports
           auth: {
-            user: process.env.userName, // SMTP user Name
-            pass:process.env.userPWD // SMTP password
+            user: process.env.USER_NAME, // SMTP user Name
+            pass:process.env.USER_PWD // SMTP password
           },
         });
       
-        const emailReceivers = process.env.emailReceivers;
+        const emailReceivers = process.env.EMAIL_RECEIVERS;
 
         // send mail with defined transport object
         let info = await transporter.sendMail({
@@ -84,6 +84,7 @@ app.post("/contact", (req, res)=>{
 app.get("/contactsuccess", (req, res)=>{
     res.render("contactsuccess");
 });
+
 
 app.post("/signup", (req, res)=>{
     const email = req.body.email;
