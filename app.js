@@ -101,12 +101,11 @@ app.post("/signup", (req, res)=>{
      };
 
     const jsonData = JSON.stringify(data);
-    const dc = us10;
     const listId = process.env.LIST_ID;
     const userAuth=process.env.USERAUTH;
     const apiKey = process.env.MAILCHIMP_API_KEY;
 
-    const url = `https://${dc}.api.mailchimp.com/3.0/lists/${listId}`;
+    const url = `https://us10.api.mailchimp.com/3.0/lists/${listId}`;
 
     const options = {
         method: "POST",
