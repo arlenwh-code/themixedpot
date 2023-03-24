@@ -85,7 +85,6 @@ app.get("/contactsuccess", (req, res)=>{
     res.render("contactsuccess");
 });
 
-
 app.post("/signup", (req, res)=>{
     const email = req.body.email;
 
@@ -101,10 +100,12 @@ app.post("/signup", (req, res)=>{
      };
 
     const jsonData = JSON.stringify(data);
+    const dc = process.env.DC;
+    const listId = process.env.LIST_ID;
     const userAuth=process.env.USERAUTH;
     const apiKey = process.env.MAILCHIMP_API_KEY;
 
-    const url = `https://us10.api.mailchimp.com/3.0/lists/907c19bd3f`;
+    const url = `https://${dc}.api.mailchimp.com/3.0/lists/${listId}`;
 
     const options = {
         method: "POST",
